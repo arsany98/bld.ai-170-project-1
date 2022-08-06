@@ -14,6 +14,17 @@
 body{
     margin: 0;
 }
+.udemy-logo{
+    height: 34px;
+    width: 91px;
+    padding: 0 8px;
+}
+.udemy-logo-container{
+    display: flex;
+    min-width: 400px;
+    justify-content: center;
+    flex: 1;
+}
 .nav-bar {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     margin: 0;
@@ -21,6 +32,9 @@ body{
     display: flex;
     list-style: none;
     align-items: center;
+}
+.small.nav-bar{
+    display: none;
 }
 .reg-font{
     font-family: udemy sans;
@@ -104,4 +118,38 @@ body{
     padding: 0 12px;
     margin: 12px 0px;
     height: 48px;
+}
+.btn-space{
+    width: 48px;
+}
+@media only screen and (max-width: 1080px){
+    .hide-at-1080{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .hide-at-920{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .nav-bar{
+        display: none;
+    }
+    .small.nav-bar{
+        display: flex;
+        padding: 4px;
+    }
+    .udemy-logo{
+        height: 28px;
+        width: 75px;
+    }
+    .link{
+        margin: 0px;
+    }
+    .btn.link:hover{
+        color: initial;
+    }
 }
