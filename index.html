@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
@@ -16,7 +17,7 @@
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav-bar">
         <li>
           <a href="/">
             <img
@@ -27,41 +28,53 @@
             />
           </a>
         </li>
-        <li><button>Categories</button></li>
-        <li>
+        <li><button class="btn white-btn link reg-font">Categories</button></li>
+        <li class="search">
           <form action="">
-            <input type="text" placeholder="Search for anything" />
-            <button type="submit">
+            <input
+              class="text-input reg-font"
+              type="text"
+              placeholder="Search for anything"
+            />
+            <button class="btn icon-white-btn link" type="submit">
               <span class="material-icons-outlined">search</span>
             </button>
           </form>
         </li>
-        <li><a href="">Udemy Business</a></li>
-        <li><a href="">Teach on Udemy</a></li>
         <li>
-          <button type="submit">
+          <button class="btn white-btn link reg-font">Udemy Business</button>
+        </li>
+        <li>
+          <button class="btn white-btn link reg-font">Teach on Udemy</button>
+        </li>
+        <li>
+          <button class="btn icon-white-btn link">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
-        <li><button>Log in</button></li>
-        <li><button>Sign up</button></li>
+        <li><button class="btn white-btn btn-font box">Log in</button></li>
+        <li><button class="btn black-btn btn-font box">Sign up</button></li>
         <li>
-          <button>
-            <span class="material-icons-outlined"> language </span>
+          <button class="btn icon-white-btn box">
+            <span class="material-icons-outlined md18"> language </span>
           </button>
         </li>
       </ul>
     </nav>
+    <br />
     <header>
       <img
         width="1340"
         height="400"
-        alt="a woman sitting on a chair"
-        src="https://img-c.udemycdn.com/notices/web_banner/slide_2_image_udlite/e6cc1a30-2dec-4dc5-b0f2-c5b656909d5b.jpg"
+        alt="a clock"
+        src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"
       />
       <div>
-        <h1>Learning that gets you</h1>
-        <p>Skills for your present (and your future). Get started with us.</p>
+        <h1>New to Udemy? Lucky you.</h1>
+        <p>
+          Courses start at E£169.99. Get your new-student offer before it
+          expires.
+        </p>
       </div>
     </header>
     <main>

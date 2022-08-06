@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "SuisseWorks";
+    src: url("https://www.udemy.com/staticx/udemy/fonts/SuisseWorks-Bold-v1.woff2") format('woff');
+}
+@font-face {
+    font-family: "udemy sans";
+    src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2") format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "udemy sans";
+    src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2") format('woff');
+}
+body{
+    margin: 0;
+}
+.nav-bar {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    margin: 0;
+    padding: 0px 24px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.reg-font{
+    font-family: udemy sans;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px;
+}
+.btn-font{
+    font-family: udemy sans;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 14px;
+}
+.btn.link:hover{
+    color: #5624d0;
+}
+.btn{
+    cursor: pointer;
+    border: 0;
+    min-width: max-content;
+}
+.white-btn.box:hover{
+    background-color:#f7f9fa
+}
+.white-btn{
+    background-color: transparent;
+    width: 80px;
+}
+.icon-white-btn.box:hover{
+    background-color:#f7f9fa
+}
+.icon-white-btn{
+    background-color: transparent;
+    width: 40px;
+}
+.black-btn.box:hover{
+    background-color: black;
+}
+.black-btn{
+    background-color: #1c1d1f;
+    color: white;
+    width: 80px;
+}
+
+.material-icons-outlined.md18{
+    font-size: 18px;
+}
+.search{
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: #1c1d1f;
+    border-style: solid;
+    height: 46px;
+    margin: 0 12px;
+    background-color: #f7f9fa;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    min-width: 200px;
+}
+.search form{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+.text-input{
+    border: 0;
+    outline: none;
+    margin: 0 24px 0 0px;
+    height: 40px;
+    background-color: transparent;
+    width: 100%;
+}
+.box{
+    border: 1px solid #1c1d1f;
+    margin: 0 4px;
+    height: 40px;
+}
+.link{
+    padding: 0 12px;
+    margin: 12px 0px;
+    height: 48px;
+}
