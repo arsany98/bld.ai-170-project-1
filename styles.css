@@ -11,9 +11,13 @@
     font-family: "udemy sans";
     src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2") format('woff');
 }
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 body{
-    margin: 0;
-    
+    min-width: 600px;
     font-family: udemy sans;
     font-weight: 400;
     line-height: 1.4;
@@ -23,7 +27,6 @@ body{
 .udemy-logo{
     height: 34px;
     width: 91px;
-    padding: 0 8px;
 }
 .udemy-logo-container{
     display: flex;
@@ -33,7 +36,6 @@ body{
 }
 .nav-bar {
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-    margin: 0;
     padding: 0px 24px;
     display: flex;
     list-style: none;
@@ -88,6 +90,10 @@ body{
 .material-icons-outlined.md18{
     font-size: 18px;
 }
+.material-icons-outlined.md14{
+    font-size: 14px;
+    letter-spacing: -3px;
+}
 .search{
     border-radius: 24px;
     border-width: 1px;
@@ -125,6 +131,10 @@ body{
     margin: 12px 0px;
     height: 48px;
 }
+.icon{
+    padding: 0 12px;
+    height: 48px;
+}
 .btn-space{
     width: 48px;
 }
@@ -147,13 +157,12 @@ body{
     .small.nav-bar{
         display: flex;
         padding: 4px;
+        min-width: 600px;
     }
     .udemy-logo{
+        padding: 0px;
         height: 28px;
         width: 75px;
-    }
-    .link{
-        margin: 0px;
     }
     .btn.link:hover{
         color: initial;
@@ -164,9 +173,8 @@ header{
     position: relative;
     width: 100%;
     margin-bottom: 24px;
-    min-width: 600px;
     max-width: 1340px;
-    margin: auto;
+    margin: 0 auto 24px;
 }
 header img{
     width: 100%;
@@ -188,10 +196,120 @@ h1{
     letter-spacing: -.5px;
     line-height: 1.25;
 }
-p{
-    margin: 0px;
+.courses-header p{
+    font-size: 19px;
 }
-
+.tab:hover{
+    color: black;
+}
+.tab{
+    font-family: udemy sans;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 16px;
+    padding: 8px 4px;
+    color: #6A6F73;
+    background-color: transparent;
+}
+.tabs{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    overflow: hidden;
+}
+.track-container{
+    border: 1px solid #d1d7dc;
+    padding: 32px;
+}
+.courses-container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+}
+main{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+.track-head{
+    margin: 0 0 32px;
+}
+.track-head h2{
+    margin: 0 0 8px;
+}
+.track-head p{
+    margin: 0 0 16px;
+    max-width: 800px;
+    line-height: 1.2;
+    letter-spacing: -.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.track-head button{
+    padding: 0 12px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    min-width: 173px;
+    overflow: hidden;
+}
+article img{
+    width: 100%;
+    margin-bottom: 4px;
+}
+article div{
+    width: 100%;
+}
+article a{
+    color: black;
+    text-decoration: none;
+}
+article h3{
+    font-size: 16px;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+article p{
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.subtext-font{
+    font-size: 12px;
+    color: #6a6f73;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.rating-stars{
+    margin: 0 4px;
+    color: #e59819;
+}
+.rating-num{
+    color:#b4690e;
+}
+@media only screen and (max-width: 600px) {
+    .courses-header{
+        display: none;
+    }
+    .track-head{
+        display: none;
+    }
+}
 @media only screen and (min-width: 700px) {
     header{
         margin-bottom: 48px;
@@ -210,10 +328,10 @@ p{
         object-fit: contain;
         object-position: initial;
     }
-    h1{
+    header h1{
         font-size: 32px;
     }
-    p{
+    header p{
         font-size: 16px;
     }
 }
@@ -222,6 +340,9 @@ p{
     header div{
         width: 400px;
     }
+    .courses-header h1{
+        font-size: 32px;
+    }
 }
 @media only screen and (min-width: 1200px) {
     header div{
@@ -229,7 +350,7 @@ p{
         left: 72px;
         width: 440px;
     }
-    p{
+    header p{
         font-size: 19px;
     }
 }

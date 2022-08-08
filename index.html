@@ -19,7 +19,7 @@
     <nav>
       <ul class="small nav-bar">
         <li>
-          <button class="btn icon-white-btn link">
+          <button class="btn icon-white-btn icon">
             <span class="material-icons-outlined">menu</span>
           </button>
         </li>
@@ -36,12 +36,12 @@
           </a>
         </li>
         <li>
-          <button class="btn icon-white-btn link">
+          <button class="btn icon-white-btn icon">
             <span class="material-icons-outlined">search</span>
           </button>
         </li>
         <li>
-          <button class="btn icon-white-btn link">
+          <button class="btn icon-white-btn icon">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
@@ -112,22 +112,24 @@
     </header>
     <main>
       <section>
-        <h1>A broad selection of courses</h1>
-        <p>
-          Choose from 185,000 online video courses with new additions published
-          every month
-        </p>
-        <span>
-          <button>Python</button>
-          <button>Excel</button>
-          <button>Web Development</button>
-          <button>JavaScript</button>
-          <button>Data Science</button>
-          <button>AWS Certification</button>
-          <button>Drawing</button>
-        </span>
-        <div>
-          <article>
+        <div class="courses-header">
+          <h1>A broad selection of courses</h1>
+          <p>
+            Choose from 185,000 online video courses with new additions
+            published every month
+          </p>
+        </div>
+        <div class="tabs">
+          <button class="tab btn">Python</button>
+          <button class="tab btn">Excel</button>
+          <button class="tab btn">Web Development</button>
+          <button class="tab btn">JavaScript</button>
+          <button class="tab btn">Data Science</button>
+          <button class="tab btn">AWS Certification</button>
+          <button class="tab btn">Drawing</button>
+        </div>
+        <div class="track-container">
+          <div class="track-head">
             <h2>Expand your career opportunities with Python</h2>
             <p>
               Take one of Udemy’s range of Python courses and learn how to code
@@ -137,246 +139,252 @@
               games to sites to apps. Choose from a range of courses that will
               appeal to both beginners and advanced developers alike.
             </p>
-            <button>Explore Python</button>
-          </article>
-          <article>
-            <a href="https://www.udemy.com/course/pythonforbeginners/">
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/394676_ce3d_5.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>Learn Python: The Complete Python Programming Course</h3>
-                <p>Avinash Jain, The Codex</p>
+            <button class="btn white-btn box btn-font">Explore Python</button>
+          </div>
+          <div class="courses-container">
+            <article>
+              <a href="https://www.udemy.com/course/pythonforbeginners/">
                 <div>
-                  <span>4.4</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(2,882)</span>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/394676_ce3d_5.jpg 2x
+                    "
+                  />
                 </div>
-
-                <div>E£679.99</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/"
-            >
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/396876_cc92_7.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>Learning Python for Data Analysis and Visualization</h3>
-                <p>Jose Portilla</p>
                 <div>
-                  <span>4.4</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(17,976)</span>
+                  <h3>Learn Python: The Complete Python Programming Course</h3>
+                  <p class="subtext-font">Avinash Jain, The Codex</p>
+                  <div class="rating">
+                    <span class="rating-num"><b>4.4</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(2,882)</span>
+                  </div>
+                  <div><b>E£679.99</b></div>
                 </div>
-
-                <div>E£1,599.99</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/"
-            >
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/405878_e5a0_3.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>Python for Beginners - Learn Programming from scratch</h3>
-                <p>Edwin Diaz, Coding Faculty Solutions</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/"
+              >
                 <div>
-                  <span>4.4</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(1,751)</span>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/396876_cc92_7.jpg 2x
+                    "
+                  />
                 </div>
-
-                <div>E£679.99</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="https://www.udemy.com/course/learn-python/">
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/426570_1b91_3.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>Learn Python: Python for Beginners</h3>
-                <p>Abrar Hussain</p>
                 <div>
-                  <span>4.2</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_border</span>
-
-                  <span>(2,763)</span>
+                  <h3>Learning Python for Data Analysis and Visualization</h3>
+                  <p class="subtext-font">Jose Portilla</p>
+                  <div>
+                    <span class="rating-num"><b>4.4</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(17,976)</span>
+                  </div>
+                  <div><b>E£1,599.99</b></div>
                 </div>
-
-                <div>E£319.99</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/"
-            >
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/449532_2aa9_7.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>Python Beyond the Basics - Object-Oriented Programming</h3>
-                <p>Infinite Skills</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/"
+              >
                 <div>
-                  <span>4.4</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(2,928)</span>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/405878_e5a0_3.jpg 2x
+                    "
+                  />
                 </div>
-
-                <div>E£519.99</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://www.udemy.com/course/selenium-webdriver-and-python/"
-            >
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/482754_7146_6.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>
-                  Python From Scratch & Selenium WebDriver QA Automation 2022
-                </h3>
-                <p>Admas Kinfu</p>
                 <div>
-                  <span>4.6</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(1,793)</span>
+                  <h3>Python for Beginners - Learn Programming from scratch</h3>
+                  <p class="subtext-font">
+                    Edwin Diaz, Coding Faculty Solutions
+                  </p>
+                  <div>
+                    <span class="rating-num"><b>4.4</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(1,751)</span>
+                  </div>
+                  <div><b>E£679.99</b></div>
                 </div>
-
-                <div>E£1,299.99</div>
-                <div>Bestseller</div>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a href="https://www.udemy.com/course/teach-your-kids-to-code/">
-              <div>
-                <img
-                  alt=""
-                  width="240"
-                  height="135"
-                  src="https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg"
-                  srcset="
-                    https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg 1x,
-                    https://img-c.udemycdn.com/course/480x270/519554_da68_6.jpg 2x
-                  "
-                />
-              </div>
-              <div>
-                <h3>
-                  Teach Your Kids to Code: Learn to Program Python at Any Age!
-                </h3>
-                <p>Bryson Payne</p>
+              </a>
+            </article>
+            <article>
+              <a href="https://www.udemy.com/course/learn-python/">
                 <div>
-                  <span>4.5</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star</span>
-                  <span class="material-icons-outlined">star_half</span>
-
-                  <span>(8,788)</span>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/426570_1b91_3.jpg 2x
+                    "
+                  />
                 </div>
-
-                <div>E£319.99</div>
-                <div>Bestseller</div>
-              </div>
-            </a>
-          </article>
+                <div>
+                  <h3>Learn Python: Python for Beginners</h3>
+                  <p class="subtext-font">Abrar Hussain</p>
+                  <div>
+                    <span class="rating-num"><b>4.3</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_border
+                      </span>
+                    </span>
+                    <span class="subtext-font">(2,763)</span>
+                  </div>
+                  <div><b>E£319.99</b></div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/"
+              >
+                <div>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/449532_2aa9_7.jpg 2x
+                    "
+                  />
+                </div>
+                <div>
+                  <h3>
+                    Python Beyond the Basics - Object-Oriented Programming
+                  </h3>
+                  <p class="subtext-font">Infinite Skills</p>
+                  <div>
+                    <span class="rating-num"><b>4.4</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(2,928)</span>
+                  </div>
+                  <div><b>E£519.99</b></div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.udemy.com/course/selenium-webdriver-and-python/"
+              >
+                <div>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/482754_7146_6.jpg 2x
+                    "
+                  />
+                </div>
+                <div>
+                  <h3>
+                    Python From Scratch & Selenium WebDriver QA Automation 2022
+                  </h3>
+                  <p class="subtext-font">Admas Kinfu</p>
+                  <div>
+                    <span class="rating-num"><b>4.6</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(1,793)</span>
+                  </div>
+                  <div><b>E£1,299.99</b></div>
+                  <div>Bestseller</div>
+                </div>
+              </a>
+            </article>
+            <article>
+              <a href="https://www.udemy.com/course/teach-your-kids-to-code/">
+                <div>
+                  <img
+                    alt=""
+                    src="https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg"
+                    srcset="
+                      https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg 1x,
+                      https://img-c.udemycdn.com/course/480x270/519554_da68_6.jpg 2x
+                    "
+                  />
+                </div>
+                <div>
+                  <h3>
+                    Teach Your Kids to Code: Learn to Program Python at Any Age!
+                  </h3>
+                  <p class="subtext-font">Bryson Payne</p>
+                  <div>
+                    <span class="rating-num"><b>4.5</b></span>
+                    <span class="rating-stars">
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">star</span>
+                      <span class="material-icons-outlined md14">
+                        star_half
+                      </span>
+                    </span>
+                    <span class="subtext-font">(8,788)</span>
+                  </div>
+                  <div><b>E£319.99</b></div>
+                  <div>Bestseller</div>
+                </div>
+              </a>
+            </article>
+          </div>
         </div>
       </section>
     </main>
