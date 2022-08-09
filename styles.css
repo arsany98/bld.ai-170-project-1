@@ -173,8 +173,8 @@ header{
     position: relative;
     width: 100%;
     margin-bottom: 24px;
-    max-width: 1340px;
     margin: 0 auto 24px;
+    max-width: 1340px;
 }
 header img{
     width: 100%;
@@ -188,7 +188,12 @@ header div{
     flex-direction: column;
     padding: 0 24px;
 }
-
+main{
+    max-width: 1340px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
 h1{
     margin: 8px 0px;
     font-family: SuisseWorks;
@@ -212,24 +217,13 @@ h1{
     background-color: transparent;
 }
 .tabs{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 16px;
     overflow: hidden;
 }
 .track-container{
     border: 1px solid #d1d7dc;
     padding: 32px;
-}
-.courses-container{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 16px;
-}
-main{
-    margin: auto;
-    box-sizing: border-box;
-    padding: 0 24px;
 }
 .track-head{
     margin: 0 0 32px;
@@ -251,9 +245,15 @@ main{
 .track-head button{
     padding: 0 12px;
 }
-article{
+.courses-container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+article{
+    width: min-content;
+    flex: 1;
     max-width: 375px;
     min-width: 173px;
     overflow: hidden;
@@ -291,8 +291,6 @@ article p{
     color: #6a6f73;
 }
 .rating{
-    display: flex;
-    align-items: center;
     margin-bottom: 4px;
 }
 .rating-stars{
