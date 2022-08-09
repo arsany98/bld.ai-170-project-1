@@ -17,7 +17,6 @@
     margin: 0px;
 }
 body{
-    min-width: 300px;
     font-family: udemy sans;
     font-weight: 400;
     line-height: 1.4;
@@ -29,9 +28,7 @@ body{
     width: 91px;
 }
 .udemy-logo-container{
-    display: flex;
-    min-width: 100px;
-    justify-content: center;
+    text-align: center;
     flex: 1;
 }
 .nav-bar {
@@ -157,12 +154,10 @@ body{
     .small.nav-bar{
         display: flex;
         padding: 4px;
-        min-width: 300px;
     }
     .udemy-logo{
         padding: 0px;
-        height: 28px;
-        width: 75px;
+        max-width: 75px;
     }
     .btn.link:hover{
         color: initial;
@@ -299,6 +294,13 @@ article p{
 }
 .rating-num{
     color:#b4690e;
+}
+.best-seller{
+    background-color: #eceb98;
+    color: #3d3c0a;
+    padding: 4px 8px;
+    width: fit-content;
+    font-size: 12px;
 }
 @media only screen and (max-width: 600px) {
     .courses-header{
