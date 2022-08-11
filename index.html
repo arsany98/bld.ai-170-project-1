@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
+    <link href="navbar-styles.css" rel="stylesheet" />
+    <link href="header-styles.css" rel="stylesheet" />
+    <link href="courses-styles.css" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
@@ -19,7 +23,7 @@
     <nav>
       <ul class="small nav-bar">
         <li>
-          <button class="btn icon-white-btn icon">
+          <button class="btn white-bg link">
             <span class="material-icons-outlined">menu</span>
           </button>
         </li>
@@ -36,12 +40,12 @@
           </a>
         </li>
         <li>
-          <button class="btn icon-white-btn icon">
+          <button class="btn white-bg link">
             <span class="material-icons-outlined">search</span>
           </button>
         </li>
         <li>
-          <button class="btn icon-white-btn icon">
+          <button class="btn white-bg link">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
@@ -59,7 +63,7 @@
           </a>
         </li>
         <li>
-          <button class="btn white-btn link reg-font">Categories</button>
+          <button class="btn white-bg link reg-font">Categories</button>
         </li>
         <li class="search">
           <form action="">
@@ -68,40 +72,48 @@
               type="text"
               placeholder="Search for anything"
             />
-            <button class="btn icon-white-btn link" type="submit">
+            <button class="btn white-bg link" type="submit">
               <span class="material-icons-outlined">search</span>
             </button>
           </form>
         </li>
         <li class="hide-at-1080">
-          <button class="btn white-btn link reg-font">Udemy Business</button>
+          <button class="btn white-bg link reg-font">Udemy Business</button>
         </li>
         <li class="hide-at-920">
-          <button class="btn white-btn link reg-font">Teach on Udemy</button>
+          <button class="btn white-bg link reg-font">Teach on Udemy</button>
         </li>
         <li>
-          <button class="btn icon-white-btn link">
+          <button class="btn white-bg link">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
         <li>
-          <button class="btn white-btn btn-font box">Log in</button>
+          <button class="btn white-bg bold-font box">Log in</button>
         </li>
         <li>
-          <button class="btn black-btn btn-font box">Sign up</button>
+          <button class="btn black-bg bold-font box">Sign up</button>
         </li>
         <li>
-          <button class="btn icon-white-btn box">
+          <button class="btn white-bg icon box">
             <span class="material-icons-outlined md18"> language </span>
           </button>
         </li>
       </ul>
     </nav>
     <header>
-      <img
-        alt="a clock"
-        src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"
-      />
+      <picture>
+        <source
+          media="(max-width: 700px)"
+          srcset="
+            https://img-c.udemycdn.com/notices/web_banner/slide_1_image_responsive_udlite/cd0b820f-6389-4ff0-87e2-bb5a90690545.jpg
+          "
+        />
+        <img
+          src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"
+          alt="a clock"
+        />
+      </picture>
       <div>
         <h1>New to Udemy? Lucky you.</h1>
         <p>
@@ -139,14 +151,15 @@
               games to sites to apps. Choose from a range of courses that will
               appeal to both beginners and advanced developers alike.
             </p>
-            <button class="btn white-btn box btn-font">Explore Python</button>
+            <button class="btn white-bg box bold-font">Explore Python</button>
           </div>
           <div class="courses-container">
             <article>
               <a href="https://www.udemy.com/course/pythonforbeginners/">
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Learn Python: The Complete Python Programming Course"
                     src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg 1x,
@@ -178,9 +191,10 @@
               <a
                 href="https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/"
               >
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Learning Python for Data Analysis and Visualization"
                     src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg 1x,
@@ -212,9 +226,10 @@
               <a
                 href="https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/"
               >
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Python for Beginners - Learn Programming from scratch"
                     src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg 1x,
@@ -246,9 +261,10 @@
             </article>
             <article>
               <a href="https://www.udemy.com/course/learn-python/">
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Learn Python: Python for Beginners"
                     src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg 1x,
@@ -280,9 +296,10 @@
               <a
                 href="https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/"
               >
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Python Beyond the Basics - Object-Oriented Programming"
                     src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg 1x,
@@ -316,9 +333,10 @@
               <a
                 href="https://www.udemy.com/course/selenium-webdriver-and-python/"
               >
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Python From Scratch & Selenium WebDriver QA Automation 2022"
                     src="https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg 1x,
@@ -353,9 +371,10 @@
             </article>
             <article>
               <a href="https://www.udemy.com/course/teach-your-kids-to-code/">
-                <div>
+                <div class="img-container">
+                  <div class="img-hover"></div>
                   <img
-                    alt=""
+                    alt="Teach Your Kids to Code: Learn to Program Python at Any Age!"
                     src="https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg"
                     srcset="
                       https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg 1x,

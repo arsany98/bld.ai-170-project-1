@@ -1,354 +1,106 @@
 @font-face {
-    font-family: "SuisseWorks";
-    src: url("https://www.udemy.com/staticx/udemy/fonts/SuisseWorks-Bold-v1.woff2") format('woff');
+  font-family: "SuisseWorks";
+  src: url("https://www.udemy.com/staticx/udemy/fonts/SuisseWorks-Bold-v1.woff2")
+    format("woff");
 }
 @font-face {
-    font-family: "udemy sans";
-    src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2") format('woff');
-    font-weight: bold;
+  font-family: "udemy sans";
+  src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Bold-v1.woff2")
+    format("woff");
+  font-weight: bold;
 }
 @font-face {
-    font-family: "udemy sans";
-    src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2") format('woff');
+  font-family: "udemy sans";
+  src: url("https://www.udemy.com/staticx/udemy/fonts/Udemy-Sans-Regular-v1.woff2")
+    format("woff");
 }
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+:root {
+  --light: #f7f9fa;
+  --dark: #1c1d1f;
+  --light-grey: #d1d7dc;
+  --grey: #6a6f73;
+  --purple: #5624d0;
+  --max-width: 1340px;
 }
-body{
-    font-family: udemy sans;
-    font-weight: 400;
-    line-height: 1.4;
-    font-size: 16px;
-    color: #1c1d1f;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
-.udemy-logo{
-    height: 34px;
-    width: 91px;
+body {
+  font-family: udemy sans;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 16px;
+  color: var(--dark);
 }
-.udemy-logo-container{
-    text-align: center;
-    flex: 1;
+.reg-font {
+  font-family: udemy sans;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 14px;
 }
-.nav-bar {
-    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-    padding: 0px 24px;
-    display: flex;
-    list-style: none;
-    align-items: center;
+.bold-font {
+  font-family: udemy sans;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 14px;
 }
-.small.nav-bar{
-    display: none;
+h1 {
+  margin: 8px 0px;
+  font-family: SuisseWorks;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
 }
-.reg-font{
-    font-family: udemy sans;
-    font-weight: 400;
-    line-height: 1.4;
-    font-size: 14px;
+.material-icons-outlined.md18 {
+  font-size: 18px;
 }
-.btn-font{
-    font-family: udemy sans;
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 14px;
+.material-icons-outlined.md14 {
+  font-size: 14px;
+  letter-spacing: -3px;
 }
-.btn.link:hover{
-    color: #5624d0;
+.btn.link:hover {
+  color: var(--purple);
 }
-.btn{
-    cursor: pointer;
-    border: 0;
-    min-width: max-content;
+.btn {
+  cursor: pointer;
+  border: 0;
+  min-width: max-content;
 }
-.white-btn.box:hover{
-    background-color:#f7f9fa
+.white-bg.box:hover {
+  background-color: var(--light);
 }
-.white-btn{
-    background-color: transparent;
-    width: 80px;
+.white-bg {
+  background-color: transparent;
 }
-.icon-white-btn.box:hover{
-    background-color:#f7f9fa
+.black-bg.box:hover {
+  background-color: black;
 }
-.icon-white-btn{
-    background-color: transparent;
-    width: 40px;
+.black-bg {
+  background-color: var(--dark);
+  color: white;
 }
-.black-btn.box:hover{
-    background-color: black;
+.box {
+  border: 1px solid var(--dark);
+  margin: 0 4px;
+  padding: 0 12px;
+  height: 40px;
+  width: 80px;
 }
-.black-btn{
-    background-color: #1c1d1f;
-    color: white;
-    width: 80px;
+.icon.box {
+  width: 40px;
+  padding: 0;
 }
-
-.material-icons-outlined.md18{
-    font-size: 18px;
+.link {
+  padding: 0 12px;
+  height: 48px;
 }
-.material-icons-outlined.md14{
-    font-size: 14px;
-    letter-spacing: -3px;
+.btn-space {
+  width: 48px;
 }
-.search{
-    border-radius: 24px;
-    border-width: 1px;
-    border-color: #1c1d1f;
-    border-style: solid;
-    height: 46px;
-    margin: 0 12px;
-    background-color: #f7f9fa;
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    min-width: 200px;
-}
-.search form{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 100%;
-}
-.text-input{
-    border: 0;
-    outline: none;
-    margin: 0 24px 0 0px;
-    height: 40px;
-    background-color: transparent;
-    width: 100%;
-}
-.box{
-    border: 1px solid #1c1d1f;
-    margin: 0 4px;
-    height: 40px;
-}
-.link{
-    padding: 0 12px;
-    margin: 12px 0px;
-    height: 48px;
-}
-.icon{
-    padding: 0 12px;
-    height: 48px;
-}
-.btn-space{
-    width: 48px;
-}
-@media only screen and (max-width: 1080px){
-    .hide-at-1080{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 920px){
-    .hide-at-920{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .nav-bar{
-        display: none;
-    }
-    .small.nav-bar{
-        display: flex;
-        padding: 4px;
-    }
-    .udemy-logo{
-        padding: 0px;
-        max-width: 75px;
-        width: 100%;
-    }
-    .btn.link:hover{
-        color: initial;
-    }
-}
-
-header{
-    position: relative;
-    width: 100%;
-    margin-bottom: 24px;
-    margin: 0 auto 24px;
-    max-width: 1340px;
-}
-header img{
-    width: 100%;
-    margin: 8px 0px;
-    object-fit: cover;
-    height: 250px;
-    object-position: center;
-}
-header div{
-    display: flex;
-    flex-direction: column;
-    padding: 0 24px;
-}
-main{
-    max-width: 1340px;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 0 24px;
-}
-h1{
-    margin: 8px 0px;
-    font-family: SuisseWorks;
-    font-size: 24px;
-    letter-spacing: -.5px;
-    line-height: 1.25;
-}
-.courses-header p{
-    font-size: 19px;
-}
-.tab:hover{
-    color: black;
-}
-.tab{
-    font-family: udemy sans;
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 16px;
-    padding: 8px 4px;
-    color: #6A6F73;
-    background-color: transparent;
-}
-.tabs{
-    display: flex;
-    gap: 16px;
-    overflow: hidden;
-}
-.track-container{
-    border: 1px solid #d1d7dc;
-    padding: 32px;
-}
-.track-head{
-    margin: 0 0 32px;
-}
-.track-head h2{
-    margin: 0 0 8px;
-}
-.track-head p{
-    margin: 0 0 16px;
-    max-width: 800px;
-    line-height: 1.2;
-    letter-spacing: -.2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-.track-head button{
-    padding: 0 12px;
-}
-.courses-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(173px, 1fr));
-    gap: 16px;
-}
-article{
-    max-width: 375px;
-    min-width: 173px;
-    overflow: hidden;
-}
-article img{
-    width: 100%;
-    margin-bottom: 4px;
-}
-article div{
-    width: 100%;
-}
-article a{
-    color: black;
-    text-decoration: none;
-}
-article h3{
-    font-size: 16px;
-    margin-bottom: 4px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-article p{
-    margin-bottom: 4px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.subtext-font{
-    font-size: 12px;
-    color: #6a6f73;
-}
-.rating{
-    margin-bottom: 4px;
-}
-.rating-stars{
-    margin: 0 4px;
-    color: #e59819;
-}
-.rating-num{
-    color:#b4690e;
-}
-.best-seller{
-    background-color: #eceb98;
-    color: #3d3c0a;
-    padding: 4px 8px;
-    width: fit-content;
-    font-size: 12px;
-}
-@media only screen and (max-width: 600px) {
-    .courses-header{
-        display: none;
-    }
-    .track-head{
-        display: none;
-    }
-}
-@media only screen and (min-width: 700px) {
-    header{
-        margin-bottom: 48px;
-    }
-    header div{
-        box-sizing: border-box;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
-        position: absolute;
-        top: 24px;
-        left: 48px;
-        padding: 24px;
-        width: 340px;
-    }
-    header img{
-        height: auto;
-        object-fit: contain;
-        object-position: initial;
-    }
-    header h1{
-        font-size: 32px;
-    }
-    header p{
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width: 980px) {
-    header div{
-        width: 400px;
-    }
-    .courses-header h1{
-        font-size: 32px;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    header div{
-        top: 64px;
-        left: 72px;
-        width: 440px;
-    }
-    header p{
-        font-size: 19px;
-    }
+main {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 24px;
 }

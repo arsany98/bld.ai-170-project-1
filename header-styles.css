@@ -1,0 +1,61 @@
+header {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 24px;
+  max-width: var(--max-width);
+}
+header img {
+  width: 100%;
+  margin: 8px 0;
+  object-fit: cover;
+  height: 250px;
+  object-position: center;
+}
+header div {
+  padding: 0 24px;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    margin-bottom: 48px;
+  }
+  header div {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    position: absolute;
+    top: 24px;
+    left: 48px;
+    padding: 24px;
+    width: 340px;
+  }
+  header img {
+    height: auto;
+    object-fit: contain;
+    object-position: initial;
+  }
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  header div {
+    width: 400px;
+  }
+  .courses-header h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header div {
+    top: 64px;
+    left: 72px;
+    width: 440px;
+  }
+  header p {
+    font-size: 19px;
+  }
+}
