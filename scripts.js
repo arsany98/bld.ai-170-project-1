@@ -67,10 +67,7 @@ function renderCourses(courses) {
 function filterCourses(courses, searchText) {
   let filtered = [];
   courses.forEach((course) => {
-    if (
-      course.title.toLowerCase().includes(searchText.toLowerCase().trim()) ||
-      course.author.toLowerCase().includes(searchText.toLowerCase().trim())
-    )
+    if (course.title.toLowerCase().includes(searchText.toLowerCase().trim()))
       filtered.push(course);
   });
   return filtered;
