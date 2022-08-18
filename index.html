@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link href="styles.css" rel="stylesheet" />
     <link href="navbar-styles.css" rel="stylesheet" />
     <link href="header-styles.css" rel="stylesheet" />
@@ -23,7 +29,7 @@
     <nav>
       <ul class="small nav-bar">
         <li>
-          <button class="btn white-bg link">
+          <button class="mybtn white-bg link">
             <span class="material-icons-outlined">menu</span>
           </button>
         </li>
@@ -40,19 +46,19 @@
           </a>
         </li>
         <li>
-          <button class="btn white-bg link">
+          <button class="mybtn white-bg link">
             <span class="material-icons-outlined">search</span>
           </button>
         </li>
         <li>
-          <button class="btn white-bg link">
+          <button class="mybtn white-bg link">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
       </ul>
     </nav>
     <nav>
-      <ul class="nav-bar">
+      <ul class="nav nav-bar">
         <li>
           <a href="/">
             <img
@@ -63,7 +69,7 @@
           </a>
         </li>
         <li>
-          <button class="btn white-bg link reg-font">Categories</button>
+          <button class="mybtn white-bg link reg-font">Categories</button>
         </li>
         <li class="search">
           <form action="">
@@ -72,30 +78,30 @@
               type="text"
               placeholder="Search for anything"
             />
-            <button class="btn white-bg link" type="submit">
+            <button class="mybtn white-bg link" type="submit">
               <span class="material-icons-outlined">search</span>
             </button>
           </form>
         </li>
         <li class="hide-at-1080">
-          <button class="btn white-bg link reg-font">Udemy Business</button>
+          <button class="mybtn white-bg link reg-font">Udemy Business</button>
         </li>
         <li class="hide-at-920">
-          <button class="btn white-bg link reg-font">Teach on Udemy</button>
+          <button class="mybtn white-bg link reg-font">Teach on Udemy</button>
         </li>
         <li>
-          <button class="btn white-bg link">
+          <button class="mybtn white-bg link">
             <span class="material-icons-outlined">shopping_cart</span>
           </button>
         </li>
         <li>
-          <button class="btn white-bg bold-font box">Log in</button>
+          <button class="mybtn white-bg bold-font box">Log in</button>
         </li>
         <li>
-          <button class="btn black-bg bold-font box">Sign up</button>
+          <button class="mybtn black-bg bold-font box">Sign up</button>
         </li>
         <li>
-          <button class="btn white-bg icon box">
+          <button class="mybtn white-bg icon box">
             <span class="material-icons-outlined md18"> language </span>
           </button>
         </li>
@@ -131,32 +137,15 @@
             published every month
           </p>
         </div>
-        <div class="tabs">
-          <button class="tab btn">Python</button>
-          <button class="tab btn">Excel</button>
-          <button class="tab btn">Web Development</button>
-          <button class="tab btn">JavaScript</button>
-          <button class="tab btn">Data Science</button>
-          <button class="tab btn">AWS Certification</button>
-          <button class="tab btn">Drawing</button>
-        </div>
-        <div class="track-container">
-          <div class="track-head">
-            <h2>Expand your career opportunities with Python</h2>
-            <p>
-              Take one of Udemy’s range of Python courses and learn how to code
-              using this incredibly useful language. Its simple syntax and
-              readability makes Python perfect for Flask, Django, data science,
-              and machine learning. You’ll learn how to build everything from
-              games to sites to apps. Choose from a range of courses that will
-              appeal to both beginners and advanced developers alike.
-            </p>
-            <button class="btn white-bg box bold-font">Explore Python</button>
-          </div>
-          <div class="courses-container"></div>
-        </div>
+        <ul class="nav nav-pills tabs" id="pills-tab" role="tablist"></ul>
+        <div class="tab-content" id="pills-tabContent"></div>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts.js"></script>
   </body>
 </html>

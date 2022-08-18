@@ -13,6 +13,9 @@
   color: var(--grey);
   background-color: transparent;
 }
+.tab.active {
+  color: var(--dark);
+}
 .tabs {
   display: flex;
   gap: 16px;
@@ -48,10 +51,8 @@
     display: none;
   }
 }
-.courses-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(173px, 1fr));
-  gap: 16px;
+article {
+  padding: 8px;
 }
 article:hover .img-hover {
   display: block;
@@ -70,6 +71,10 @@ article:hover .img-hover {
 }
 article a {
   color: var(--dark);
+  text-decoration: none;
+}
+article a:hover {
+  color: initial;
   text-decoration: none;
 }
 article img {
@@ -112,4 +117,77 @@ article p {
   padding: 4px 8px;
   width: fit-content;
   font-size: 12px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: var(--dark);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 20%;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(100%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-100%);
+}
+@media (min-width: 576px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.3%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.3%);
+  }
+}
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(16.7%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-16.7%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
 }

@@ -1,81 +1,260 @@
 {
-  "courses": [
+  "tracks": [
     {
       "id": 1,
-      "title": "Learn Python: The Complete Python Programming Course",
-      "author": "Avinash Jain, The Codex",
-      "image": "https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
-      "url": "https://www.udemy.com/course/pythonforbeginners/",
-      "rating": 4.4,
-      "rateCount": 2882,
-      "price": 679.99,
-      "bestseller": false
+      "name": "Python",
+      "header": "Expand your career opportunities with Python",
+      "description": "Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.",
+      "courses": [
+        {
+          "id": 1,
+          "title": "Learn Python: The Complete Python Programming Course",
+          "author": "Avinash Jain, The Codex",
+          "image": "https://img-c.udemycdn.com/course/750x422/394676_ce3d_5.jpg",
+          "url": "https://www.udemy.com/course/pythonforbeginners/",
+          "rating": 4.4,
+          "rateCount": 2882,
+          "price": 679.99,
+          "bestseller": false
+        },
+        {
+          "id": 2,
+          "title": "Learning Python for Data Analysis and Visualization",
+          "author": "Jose Portilla",
+          "image": "https://img-c.udemycdn.com/course/750x422/396876_cc92_7.jpg",
+          "url": "https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/",
+          "rating": 4.4,
+          "rateCount": 17976,
+          "price": 1599.99,
+          "bestseller": false
+        },
+        {
+          "id": 3,
+          "title": "Python for Beginners - Learn Programming from scratch",
+          "author": "Edwin Diaz, Coding Faculty Solutions",
+          "image": "https://img-c.udemycdn.com/course/750x422/405878_e5a0_3.jpg",
+          "url": "https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/",
+          "rating": 4.4,
+          "rateCount": 1751,
+          "price": 679.99,
+          "bestseller": false
+        },
+        {
+          "id": 4,
+          "title": "Learn Python: Python for Beginners",
+          "author": "Abrar Hussain",
+          "image": "https://img-c.udemycdn.com/course/750x422/426570_1b91_3.jpg",
+          "url": "https://www.udemy.com/course/learn-python/",
+          "rating": 4.3,
+          "rateCount": 2763,
+          "price": 319.99,
+          "bestseller": false
+        },
+        {
+          "id": 5,
+          "title": "Python Beyond the Basics - Object-Oriented Programming",
+          "author": "Infinite Skills",
+          "image": "https://img-c.udemycdn.com/course/750x422/449532_2aa9_7.jpg",
+          "url": "https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/",
+          "rating": 4.4,
+          "rateCount": 2928,
+          "price": 519.99,
+          "bestseller": false
+        },
+        {
+          "id": 6,
+          "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
+          "author": "Admas Kinfu",
+          "image": "https://img-c.udemycdn.com/course/750x422/482754_7146_6.jpg",
+          "url": "https://www.udemy.com/course/selenium-webdriver-and-python/",
+          "rating": 4.6,
+          "rateCount": 1793,
+          "price": 1299.99,
+          "bestseller": true
+        },
+        {
+          "id": 7,
+          "title": "Teach Your Kids to Code: Learn to Program Python at Any Age!",
+          "author": "Bryson Payne",
+          "image": "https://img-c.udemycdn.com/course/750x422/519554_da68_6.jpg",
+          "url": "https://www.udemy.com/course/teach-your-kids-to-code/",
+          "rating": 4.5,
+          "rateCount": 8788,
+          "price": 319.99,
+          "bestseller": true
+        },
+        {
+          "id": 8,
+          "title": "Python for Data Structures, Algorithms, and Interviews!",
+          "author": "Jose Portilla",
+          "image": "https://img-c.udemycdn.com/course/750x422/535622_3bc0.jpg",
+          "url": "https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/",
+          "rating": 4.5,
+          "rateCount": 10708,
+          "price": 219.99
+        },
+        {
+          "id": 9,
+          "title": "Automate the Boring Stuff with Python Programming",
+          "author": "Al Sweigart",
+          "image": "https://img-c.udemycdn.com/course/750x422/543600_64d1_4.jpg",
+          "url": "https://www.udemy.com/course/automate/",
+          "rating": 4.7,
+          "rateCount": 101783,
+          "price": 269.99
+        },
+        {
+          "id": 10,
+          "title": "2022 Complete Python Bootcamp From Zero to Hero in Python",
+          "author": "Jose Portilla",
+          "image": "https://img-c.udemycdn.com/course/750x422/567828_67d0.jpg",
+          "url": "https://www.udemy.com/course/complete-python-bootcamp/",
+          "rating": 4.6,
+          "rateCount": 428474,
+          "price": 229.99
+        },
+        {
+          "id": 11,
+          "title": "Python for Beginners with Examples",
+          "author": "Ardit Sulce",
+          "image": "https://img-c.udemycdn.com/course/750x422/577248_3b6f_13.jpg",
+          "url": "https://www.udemy.com/course/ardit-sulce-python-for-beginners/",
+          "rating": 4.5,
+          "rateCount": 9251,
+          "price": 229.99
+        },
+        {
+          "id": 12,
+          "title": "Taming Big Data with Apache Spark and Python - Hands On!",
+          "author": "Sundog Education by Frank Kane, Frank Kane, Sundog Education Team",
+          "image": "https://img-c.udemycdn.com/course/750x422/622414_03f5_4.jpg",
+          "url": "https://www.udemy.com/course/taming-big-data-with-apache-spark-hands-on/",
+          "rating": 4.5,
+          "rateCount": 13336,
+          "price": 199.99
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Learning Python for Data Analysis and Visualization",
-      "author": "Jose Portilla",
-      "image": "https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg",
-      "url": "https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/",
-      "rating": 4.4,
-      "rateCount": 17976,
-      "price": 1599.99,
-      "bestseller": false
+      "name": "Excel",
+      "header": "Analyze and visualize data with Excel",
+      "description": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to turn their raw data into actionable insights.",
+      "courses": [
+        {
+          "id": 1,
+          "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+          "author": "Infinite Skills",
+          "image": "https://img-c.udemycdn.com/course/750x422/31535_e351_7.jpg",
+          "url": "https://www.udemy.com/course/microsoft-excel-2013-course-beginners-intermediate-training/",
+          "rating": 4.5,
+          "rateCount": 1623,
+          "price": 269.99,
+          "bestseller": false
+        },
+        {
+          "id": 2,
+          "title": "Microsoft Excel 2013  Advanced. Online Excel Training Course",
+          "author": "Infinite Skills",
+          "image": "https://img-c.udemycdn.com/course/750x422/39292_b3f3_9.jpg",
+          "url": "https://www.udemy.com/course/advanced-microsoft-excel-2013-online-excel-course/",
+          "rating": 4.5,
+          "rateCount": 3504,
+          "price": 269.99,
+          "bestseller": false
+        },
+        {
+          "id": 3,
+          "title": "Microsoft Excel - From Beginner to Expert in 6 Hours",
+          "author": "Todd McLeod",
+          "image": "https://img-c.udemycdn.com/course/750x422/49250_a658_8.jpg",
+          "url": "https://www.udemy.com/course/thebestexcel/",
+          "rating": 4.5,
+          "rateCount": 24595,
+          "price": 229.99,
+          "bestseller": false
+        },
+        {
+          "id": 4,
+          "title": "Sharper skills using Microsoft Excel 2010 for business",
+          "author": "Ulrika Hedlund",
+          "image": "https://img-c.udemycdn.com/course/750x422/51078_15b7_8.jpg",
+          "url": "https://www.udemy.com/course/businessexcel2010/",
+          "rating": 4.7,
+          "rateCount": 656,
+          "price": 199.99,
+          "bestseller": false
+        },
+        {
+          "id": 5,
+          "title": "Learn Microsoft Excel 2013 - Advanced",
+          "author": "Simon Sez IT",
+          "image": "https://img-c.udemycdn.com/course/750x422/56660_5635_3.jpg",
+          "url": "https://www.udemy.com/course/learn-microsoft-excel-2013-advanced-training/",
+          "rating": 4.6,
+          "rateCount": 372,
+          "price": 269.99,
+          "bestseller": false
+        },
+        {
+          "id": 6,
+          "title": "Excel 2013",
+          "author": "Learnit Anytime",
+          "image": "https://img-c.udemycdn.com/course/750x422/58489_e3be_5.jpg",
+          "url": "https://www.udemy.com/course/excel-2013/",
+          "rating": 4.6,
+          "rateCount": 1442,
+          "price": 269.99,
+          "bestseller": true
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Python for Beginners - Learn Programming from scratch",
-      "author": "Edwin Diaz, Coding Faculty Solutions",
-      "image": "https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg",
-      "url": "https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/",
-      "rating": 4.4,
-      "rateCount": 1751,
-      "price": 679.99,
-      "bestseller": false
+      "name": "Web Development",
+      "header": "Build websites and applications with Web Development",
+      "description": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
+      "courses": [
+        {
+          "id": 1,
+          "title": "Become a Certified HTML, CSS, JavaScript Web Developer",
+          "author": "Tech Learning Network, Mark Lassoff",
+          "image": "https://img-c.udemycdn.com/course/750x422/11475_9dac_14.jpg",
+          "url": "https://www.udemy.com/course/become-a-certified-web-developer/",
+          "rating": 4.5,
+          "rateCount": 2739,
+          "price": 679.99,
+          "bestseller": false
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Learn Python: Python for Beginners",
-      "author": "Abrar Hussain",
-      "image": "https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg",
-      "url": "https://www.udemy.com/course/learn-python/",
-      "rating": 4.3,
-      "rateCount": 2763,
-      "price": 319.99,
-      "bestseller": false
+      "name": "JavaScript",
+      "header": "Grow your software development skills with JavaScript",
+      "description": "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build interactive web applications, choose the best framework, and work with other programming languages like HTML and CSS.",
+      "courses": []
     },
     {
       "id": 5,
-      "title": "Python Beyond the Basics - Object-Oriented Programming",
-      "author": "Infinite Skills",
-      "image": "https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg",
-      "url": "https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/",
-      "rating": 4.4,
-      "rateCount": 2928,
-      "price": 519.99,
-      "bestseller": false
+      "name": "Data Science",
+      "header": "Lead data-driven decisions with Data Science",
+      "description": "Data science application is an in-demand skill in many industries worldwide — including finance, transportation, education, manufacturing, human resources, and banking. Explore data science courses with Python, statistics, machine learning, and more to grow your knowledge. Get data science training if you’re into research, statistics, and analytics.",
+      "courses": []
     },
     {
       "id": 6,
-      "title": "Python From Scratch & Selenium WebDriver QA Automation 2022",
-      "author": "Admas Kinfu",
-      "image": "https://img-c.udemycdn.com/course/240x135/482754_7146_6.jpg",
-      "url": "https://www.udemy.com/course/selenium-webdriver-and-python/",
-      "rating": 4.6,
-      "rateCount": 1793,
-      "price": 1299.99,
-      "bestseller": true
+      "name": "AWS Certification",
+      "header": "Become an expert in cloud computing with AWS Certification",
+      "description": "Prep for your AWS certification with an AWS course on Udemy. Learn the fundamentals of AWS such as working with a serverless platform, the various frameworks, security and more. With these courses, you’ll build the valuable skills you need to implement cloud initiatives — and open up new career opportunities. If you want to become an AWS developer, we’ve got the course for you.",
+      "courses": []
     },
     {
       "id": 7,
-      "title": "Teach Your Kids to Code: Learn to Program Python at Any Age!",
-      "author": "Bryson Payne",
-      "image": "https://img-c.udemycdn.com/course/240x135/519554_da68_6.jpg",
-      "url": "https://www.udemy.com/course/teach-your-kids-to-code/",
-      "rating": 4.5,
-      "rateCount": 8788,
-      "price": 319.99,
-      "bestseller": true
+      "name": "Drawing",
+      "header": "Expand your creative skillset with Drawing",
+      "description": "Want to start drawing for fun or take your craft to the next level? Explore our online drawing classes and learn pencil drawing, figure drawing, cartoon drawing, character drawing for cartoons and anime, illustration, sketching, shading and more. Take an overview course on the fundamentals of drawing or zero in on an area you’d like to improve with a specialized course. We’ve got tons of options to get — and keep — you going.",
+      "courses": []
     }
   ]
 }
