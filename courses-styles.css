@@ -24,6 +24,7 @@
 .track-container {
   border: 1px solid var(--light-grey);
   padding: 32px;
+  margin: 8px 0;
 }
 .track-head {
   margin: 0 0 32px;
@@ -59,7 +60,7 @@ article:hover .img-hover {
 }
 .img-container {
   position: relative;
-  display: flex;
+  min-width: 173px;
 }
 .img-hover {
   background-color: black;
@@ -103,6 +104,11 @@ article p {
 }
 .rating {
   margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rating-stars {
   margin: 0 4px;
@@ -122,72 +128,24 @@ article p {
 .carousel-control-prev,
 .carousel-control-next {
   background-color: var(--dark);
+  opacity: 100%;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   top: 20%;
 }
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #393b3f;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
   display: flex;
 }
-.carousel-inner .carousel-item-end.active,
-.carousel-inner .carousel-item-next {
-  transform: translateX(100%);
-}
 
-.carousel-inner .carousel-item-start.active,
-.carousel-inner .carousel-item-prev {
-  transform: translateX(-100%);
-}
-@media (min-width: 576px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(50%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-50%);
-  }
-}
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(33.3%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-33.3%);
-  }
-}
-@media (min-width: 992px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-}
-@media (min-width: 1200px) {
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(16.7%);
-  }
-
-  .carousel-inner .carousel-item-start.active,
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-16.7%);
-  }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
+.no-courses {
+  color: var(--grey);
+  text-align: center;
+  margin: 64px 0;
 }
