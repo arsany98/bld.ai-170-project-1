@@ -53,20 +53,32 @@ h1 {
   letter-spacing: -0.5px;
   line-height: 1.25;
 }
+h2 {
+  font-family: udemy sans;
+  line-height: 1.2;
+  font-size: 24px;
+  color: var(--dark);
+}
 .material-icons-outlined.md18 {
   font-size: 18px;
+}
+.material-icons-outlined.md32 {
+  font-size: 32px;
 }
 .material-icons-outlined.md14 {
   font-size: 14px;
   letter-spacing: -3px;
 }
-.btn.link:hover {
+.mybtn.link:hover {
   color: var(--purple);
 }
-.btn {
+.mybtn {
   cursor: pointer;
   border: 0;
   min-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .white-bg.box:hover {
   background-color: var(--light);
